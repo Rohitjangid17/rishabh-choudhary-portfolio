@@ -7,87 +7,149 @@
     <title>Publication Design</title>
     <!-- favicon -->
     <link rel="icon" href="./assets/images/layout/Favicon.svg" type="image/x-icon" />
+    <!-- Bootstrap CDN url -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap icon CDN url -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <!-- home page css file include -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/lightcase.css">
+    <!-- common css file include -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="css/owl.crousel.css">
 </head>
 
-<body>
-    <?php
-    include('header.php');
-    ?>
-
-    <!-- page content start here -->
-    <div class="row page-row">
-        <main lass="main" style="padding-left: 15px;">
-            <!-- hero section start here -->
-            <section id="heroSection">
-                <div class="row">
-                    <div class="col-sm-4"></div>
-                    <div class="col-md-8 col-sm-12">
-                        <div class="tracking">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <h4>Publication Design</h4>
-                                    <h3>India’s Biggest Sporting Event National Games Gujarat 2022</h3>
-                                    <p><span class="d-block">Build an dynamic and fully responsive website to handle large traffic, In Builder.io</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <img src="assets/images/image/ngg.svg" class="img-fluid" alt="National games" />
-                                </div>
-                            </div>
+<body class="position-relative">
+    <div class="scrollDataframe"></div>
+    <div class="frame">
+        <!-- header start here -->
+        <header class="header">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-content">
+                        <!-- Logo -->
+                        <a href="index.html">
+                            <img src="./assets/images/layout/Logo.svg" class="img-fluid" alt="logo" />
+                        </a>
+                        <!-- Date & time -->
+                        <div class="d-flex gap-2 align-items-center">
+                            <p id="dateTime"></p>
+                            <button onclick="menuToggle()" class="menu-button"><i class="bi bi-list"></i></button>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- hero section end here -->
-
-            <!-- National Games Gujarat 2022 section start here -->
-            <section class="padding-y development">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="sidebar">
-                            <div class="sidebar-content">
-                                <h3>Type</h3>
-                                <p>Publication</p>
-                            </div>
-                            <div class="sidebar-content">
-                                <h3>Tools</h3>
-                                <p>Adobe InDesign, Adobe Illustrator</p>
-                            </div>
-                            <div class="sidebar-content">
-                                <h3>Industry</h3>
-                                <p>Design &amp; Print</p>
+            </div>
+        </header>
+        <!-- header end here -->
+        <!-- page content start here -->
+        <div class="row page-row">
+            <main lass="main" style="padding-left: 15px;">
+                <!-- hero section start here -->
+                <section id="heroSection">
+                    <div class="row">
+                        <div class="col-sm-4"></div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="tracking">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h4>Publication Design</h4>
+                                        <h3>India’s Biggest Sporting Event National Games Gujarat 2022</h3>
+                                        <p><span class="d-block">Build an dynamic and fully responsive website to handle
+                                                large traffic, In Builder.io</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="assets/images/image/ngg.svg" class="img-fluid" alt="National games" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-8">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="text-content">
-                                    <h4>National Games Gujarat 2022</h4>
-                                    <h3>What are National Games ?</h3>
-                                    <p>The National Games of India are like the country's own Olympics, where athletes from different states compete in various sports. </p>
-                                    <p>They started in the 1920s as the Indian Olympic Games and later became the National Games. The goal is to promote sports and find new talent. The games include many sports like athletics, archery, badminton, boxing, and more. </p>
-                                    <p>They are a big deal in India and help the country's sports grow. The games also face challenges, but they are an important part of India's sports history and help young athletes.</p>
-                                    <h3 class="primary-sub-heading">Read More About National Games By Clicking Here</h3>
+                </section>
+                <!-- hero section end here -->
 
-                                    <div class="row g-4">
-                                        <div class="col-sm-12">
-                                            <div class="light-orange-bg mt-4">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="title mt-0">
-                                                            <h3>Where does Rishabh come into the Picture</h3>
-                                                            <p>SFA is a firm, that got the contract to organize the National Games Gujarat 2022. SFA was responsible for a range of functions and roles involving the games.</p>
-                                                            <p>One of those were to make information accessible to stakeholders involved in National Games 2022, let It be <b>Audience, Media, players , Institutions, and Govt Bodies</b>. Hence to do so they, took web developers on board. </p>
-                                                            <p><b>There I came into the picture.</b></p>
-                                                            <p>I was one of the first persons who was contacted. <br /> having a meeting with <b>Shiva</b> ( Person responsible for organizing the event, Manager )we decided to make the site completely from scratch, Forming a team consisting of 2 web Designers/Developers, 2 Graphic Designer, 1 Content Writer. </p>
+                <!-- National Games Gujarat 2022 section start here -->
+                <section class="padding-y development">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="sidebar">
+                                <div class="sidebar-content">
+                                    <h3>Type</h3>
+                                    <p>Publication</p>
+                                </div>
+                                <div class="sidebar-content">
+                                    <h3>Tools</h3>
+                                    <p>Adobe InDesign, Adobe Illustrator</p>
+                                </div>
+                                <div class="sidebar-content">
+                                    <h3>Industry</h3>
+                                    <p>Design &amp; Print</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="text-content">
+                                        <h4>National Games Gujarat 2022</h4>
+                                        <h3>What are National Games ?</h3>
+                                        <p>The National Games of India are like the country's own Olympics, where
+                                            athletes
+                                            from different states compete in various sports. </p>
+                                        <p>They started in the 1920s as the Indian Olympic Games and later became the
+                                            National Games. The goal is to promote sports and find new talent. The games
+                                            include many sports like athletics, archery, badminton, boxing, and more.
+                                        </p>
+                                        <p>They are a big deal in India and help the country's sports grow. The games
+                                            also
+                                            face challenges, but they are an important part of India's sports history
+                                            and
+                                            help young athletes.</p>
+                                        <h3 class="primary-sub-heading">Read More About National Games By Clicking Here
+                                        </h3>
+
+                                        <div class="row g-4">
+                                            <div class="col-sm-12">
+                                                <div class="light-orange-bg mt-4">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="title mt-0">
+                                                                <h3>Where does Rishabh come into the Picture</h3>
+                                                                <p>SFA is a firm, that got the contract to organize the
+                                                                    National Games Gujarat 2022. SFA was responsible for
+                                                                    a
+                                                                    range of functions and roles involving the games.
+                                                                </p>
+                                                                <p>One of those were to make information accessible to
+                                                                    stakeholders involved in National Games 2022, let It
+                                                                    be
+                                                                    <b>Audience, Media, players , Institutions, and Govt
+                                                                        Bodies</b>. Hence to do so they, took web
+                                                                    developers
+                                                                    on board.
+                                                                </p>
+                                                                <p><b>There I came into the picture.</b></p>
+                                                                <p>I was one of the first persons who was contacted.
+                                                                    <br />
+                                                                    having a meeting with <b>Shiva</b> ( Person
+                                                                    responsible
+                                                                    for organizing the event, Manager )we decided to
+                                                                    make
+                                                                    the site completely from scratch, Forming a team
+                                                                    consisting of 2 web Designers/Developers, 2 Graphic
+                                                                    Designer, 1 Content Writer.
+                                                                </p>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-12 col-sm-11">
-                                                        <div class="images-wrapper">
-                                                            <img src="assets/images/card/card_md_frame.svg" class="img-fluid w-100" alt="card md frame">
-                                                            <span>Sports Authority of Gujarat, Gandhinagar ( We were working in this this office )</span>
+                                                        <div class="col-12 col-sm-11">
+                                                            <div class="images-wrapper">
+                                                                <img src="assets/images/card/card_md_frame.svg"
+                                                                    class="img-fluid w-100" alt="card md frame">
+                                                                <span>Sports Authority of Gujarat, Gandhinagar ( We were
+                                                                    working in this this office )</span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -98,155 +160,211 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <!-- National Games Gujarat 2022 end here -->
+                </section>
+                <!-- National Games Gujarat 2022 end here -->
 
-            <!-- Working Team  section start here -->
-            <section class="development padding-y pt-0 vizitrac-section">
-                <div class="row">
-                    <div class="col-md-4">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="text-content content-bg">
-                            <h4 class="dark-heading">Working Team </h4>
-                            <h3 class="primary-sub-heading">Team</h3>
-                            <p>Team Consists of, 2 Web Designer/Developer, 2 Graphic Designer, 2 Content Writers and One Sr Developer. </p>
+                <!-- Working Team  section start here -->
+                <section class="development padding-y pt-0 vizitrac-section">
+                    <div class="row">
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="text-content content-bg">
+                                <h4 class="dark-heading">Working Team </h4>
+                                <h3 class="primary-sub-heading">Team</h3>
+                                <p>Team Consists of, 2 Web Designer/Developer, 2 Graphic Designer, 2 Content Writers and
+                                    One
+                                    Sr Developer. </p>
 
-                            <div class="engagement">
-                                <div class="engagement-content">
-                                    <h3>Reseach</h3>
-                                    <div class="reseach"></div>
-                                    <ul>
-                                        <li>Competitor Analysis</li>
-                                        <li>Understanding Stakeholder <br> requirements</li>
-                                    </ul>
-                                </div>
-                                <div class="engagement-content">
-                                    <h3>Design</h3>
-                                    <div class="design"></div>
-
-                                    <div class="list-wrapper">
-                                        <ul class="phase-lists">
-                                            <h3>PHASE 1</h3>
-                                            <li>App Structure</li>
-                                            <li>Site Map / User Flows</li>
-                                            <li>Design Exploration</li>
-                                        </ul>
-                                        <ul class="phase-lists">
-                                            <h3>PHASE 2</h3>
-                                            <li>Design System</li>
-                                            <li>Feedback</li>
-                                            <li>High Fidelity Prototype</li>
+                                <div class="engagement">
+                                    <div class="engagement-content">
+                                        <h3>Reseach</h3>
+                                        <div class="reseach"></div>
+                                        <ul>
+                                            <li>Competitor Analysis</li>
+                                            <li>Understanding Stakeholder <br> requirements</li>
                                         </ul>
                                     </div>
+                                    <div class="engagement-content">
+                                        <h3>Design</h3>
+                                        <div class="design"></div>
+
+                                        <div class="list-wrapper">
+                                            <ul class="phase-lists">
+                                                <h3>PHASE 1</h3>
+                                                <li>App Structure</li>
+                                                <li>Site Map / User Flows</li>
+                                                <li>Design Exploration</li>
+                                            </ul>
+                                            <ul class="phase-lists">
+                                                <h3>PHASE 2</h3>
+                                                <li>Design System</li>
+                                                <li>Feedback</li>
+                                                <li>High Fidelity Prototype</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="engagement-content">
+                                        <h3>Handover</h3>
+                                        <div class="handover"></div>
+                                        <p>Handing over all the designs and files to Sr. Developer.</p>
+                                    </div>
                                 </div>
-                                <div class="engagement-content">
-                                    <h3>Handover</h3>
-                                    <div class="handover"></div>
-                                    <p>Handing over all the designs and files to Sr. Developer.</p>
+
+                                <h4>My role</h4>
+                                <p>Working with stakeholders to deliver the project timely.</p>
+
+                                <div class="d-flex gap-5">
+                                    <div class="d-flex gap-3">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <img src="./assets/images/image/dark_user.svg" class="img-fluid"
+                                                alt="no image">
+                                            <span class="text-center">Sr Developer</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center">
+                                            <img src="./assets/images/image/dark_user.svg" class="img-fluid"
+                                                alt="no image">
+                                            <span class="text-center">CTO</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center">
+                                            <img src="./assets/images/image/dark_user.svg" class="img-fluid"
+                                                alt="no image">
+                                            <span class="text-center">CEO</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="./assets/images/image/orange_user.svg" class="img-fluid"
+                                            alt="no image">
+                                        <span class="text-center">Me</span>
+                                    </div>
                                 </div>
                             </div>
 
-                            <h4>My role</h4>
-                            <p>Working with stakeholders to deliver the project timely.</p>
+                            <div class="text-content content-bg margin-top">
+                                <h4 class="dark-heading">Engagement</h4>
+                                <h3 class="primary-sub-heading">Timeline</h3>
 
-                            <div class="d-flex gap-5">
-                                <div class="d-flex gap-3">
-                                    <div class="d-flex flex-column align-items-center">
-                                        <img src="./assets/images/image/dark_user.svg" class="img-fluid" alt="no image">
-                                        <span class="text-center">Sr Developer</span>
+                                <div class="engagement">
+                                    <div class="engagement-content">
+                                        <h3>Reseach</h3>
+                                        <div class="reseach"></div>
+                                        <ul>
+                                            <li>Competitor Analysis</li>
+                                            <li>Understanding Stakeholder <br> requirements</li>
+                                        </ul>
                                     </div>
-                                    <div class="d-flex flex-column align-items-center">
-                                        <img src="./assets/images/image/dark_user.svg" class="img-fluid" alt="no image">
-                                        <span class="text-center">CTO</span>
+                                    <div class="engagement-content">
+                                        <h3>Design</h3>
+                                        <div class="design"></div>
+
+                                        <div class="list-wrapper">
+                                            <ul class="phase-lists">
+                                                <h3>PHASE 1</h3>
+                                                <li>App Structure</li>
+                                                <li>Site Map / User Flows</li>
+                                                <li>Design Exploration</li>
+                                            </ul>
+                                            <ul class="phase-lists">
+                                                <h3>PHASE 2</h3>
+                                                <li>Design System</li>
+                                                <li>Feedback</li>
+                                                <li>High Fidelity Prototype</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="d-flex flex-column align-items-center">
-                                        <img src="./assets/images/image/dark_user.svg" class="img-fluid" alt="no image">
-                                        <span class="text-center">CEO</span>
+                                    <div class="engagement-content">
+                                        <h3>Handover</h3>
+                                        <div class="handover"></div>
+                                        <p>Handing over all the designs and files to Sr. Developer.</p>
                                     </div>
                                 </div>
-                                <div class="d-flex flex-column align-items-center">
-                                    <img src="./assets/images/image/orange_user.svg" class="img-fluid" alt="no image">
-                                    <span class="text-center">Me</span>
+
+                                <h4>My role</h4>
+                                <p>Working with stakeholders to deliver the project timely.</p>
+
+                                <div class="d-flex gap-5">
+                                    <div class="d-flex gap-3">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <img src="./assets/images/image/dark_user.svg" class="img-fluid"
+                                                alt="no image">
+                                            <span class="text-center">Sr Developer</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center">
+                                            <img src="./assets/images/image/dark_user.svg" class="img-fluid"
+                                                alt="no image">
+                                            <span class="text-center">CTO</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center">
+                                            <img src="./assets/images/image/dark_user.svg" class="img-fluid"
+                                                alt="no image">
+                                            <span class="text-center">CEO</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="./assets/images/image/orange_user.svg" class="img-fluid"
+                                            alt="no image">
+                                        <span class="text-center">Me</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </section>
+                <!-- Working Team  section end here -->
+            </main>
+        </div>
+        <!-- page content end here -->
 
-                        <div class="text-content content-bg margin-top">
-                            <h4 class="dark-heading">Engagement</h4>
-                            <h3 class="primary-sub-heading">Timeline</h3>
-
-                            <div class="engagement">
-                                <div class="engagement-content">
-                                    <h3>Reseach</h3>
-                                    <div class="reseach"></div>
-                                    <ul>
-                                        <li>Competitor Analysis</li>
-                                        <li>Understanding Stakeholder <br> requirements</li>
-                                    </ul>
-                                </div>
-                                <div class="engagement-content">
-                                    <h3>Design</h3>
-                                    <div class="design"></div>
-
-                                    <div class="list-wrapper">
-                                        <ul class="phase-lists">
-                                            <h3>PHASE 1</h3>
-                                            <li>App Structure</li>
-                                            <li>Site Map / User Flows</li>
-                                            <li>Design Exploration</li>
-                                        </ul>
-                                        <ul class="phase-lists">
-                                            <h3>PHASE 2</h3>
-                                            <li>Design System</li>
-                                            <li>Feedback</li>
-                                            <li>High Fidelity Prototype</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="engagement-content">
-                                    <h3>Handover</h3>
-                                    <div class="handover"></div>
-                                    <p>Handing over all the designs and files to Sr. Developer.</p>
-                                </div>
-                            </div>
-
-                            <h4>My role</h4>
-                            <p>Working with stakeholders to deliver the project timely.</p>
-
-                            <div class="d-flex gap-5">
-                                <div class="d-flex gap-3">
-                                    <div class="d-flex flex-column align-items-center">
-                                        <img src="./assets/images/image/dark_user.svg" class="img-fluid" alt="no image">
-                                        <span class="text-center">Sr Developer</span>
-                                    </div>
-                                    <div class="d-flex flex-column align-items-center">
-                                        <img src="./assets/images/image/dark_user.svg" class="img-fluid" alt="no image">
-                                        <span class="text-center">CTO</span>
-                                    </div>
-                                    <div class="d-flex flex-column align-items-center">
-                                        <img src="./assets/images/image/dark_user.svg" class="img-fluid" alt="no image">
-                                        <span class="text-center">CEO</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column align-items-center">
-                                    <img src="./assets/images/image/orange_user.svg" class="img-fluid" alt="no image">
-                                    <span class="text-center">Me</span>
-                                </div>
-                            </div>
+        <!-- footer start here -->
+        <footer class="footer">
+            <div class="row g-4">
+                <div class="col-sm-12 col-md-4">
+                    <h3>
+                        <div class="d-flex"> <b>Rishabh</b>
+                            <div class="fw-normal">’s</div>
                         </div>
+                        <div class="fw-normal">Contact Deatils</div>
+                    </h3>
+                    <p>This website was designed by Rishabh</p>
+                    <span><a href="portfolioPage.html" style="color: #ff5800;"> Know how this portfolio was
+                            made?</a></span>
+                </div>
+                <div class="col-sm-12 col-md-4"></div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="backto-top">
+                        <h3 class="slider-top">
+                            <a onclick="scrollToTopSmoothly()"><i class="bi bi-arrow-up-short"></i></a>
+                        </h3>
+                    </div>
+                    <div class="contact-details">
+                        <a href="#" class="email-address">
+                            <img src="./assets/images/icons/email.svg" class="img-fluid" alt="no image">
+                            rishabh1320@gmail.com
+                        </a>
+                        <a href="#" class="contact-number">
+                            <img src="./assets/images/icons/phone.svg" class="img-fluid" alt="no image">
+                            +91 9916519867
+                        </a>
+                        <a href="#" class="linkedin">
+                            <img src="./assets/images/icons/linkedin_icon.svg" class="img-fluid" alt="no image">
+                            Linked In
+                        </a>
                     </div>
                 </div>
-            </section>
-            <!-- Working Team  section end here -->
-        </main>
-    </div>
-    <!-- page content end here -->
+            </div>
+        </footer>
+        <!-- footer end here -->
 
-    <?php
-    include('footer.php');
-    ?>
+        <!-- Bootstrap javascript CDN url -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <!-- script file -->
+        <script src="js/jquery.js"></script>
+        <script src="js/owl.crousel.js"></script>
+        <script src="js/beforeafter.jquery-1.0.0.min.js"></script>
+        <script src="js/lightcase.js"></script>
+        <script src="js/common.js"></script>
 </body>
 
 </html>
