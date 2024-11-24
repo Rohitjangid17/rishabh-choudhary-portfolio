@@ -1,0 +1,2207 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --FrameBackground: #F7F4F2;
+    --PrimaryColor: #FF5800;
+    --SecondaryColor: #363636;
+    --SidebarTitle: #4F4F4F;
+    --SidbarListItem: #A0A0A0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--PrimaryColor) transparent;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ff5800;
+    border-radius: 20px;
+}
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* improve scrollbar design */
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--PrimaryColor);
+    border-radius: 100px;
+}
+
+.scrollDataframe {
+    border: 20px solid #fff;
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1031;
+}
+
+/* header CSS start here */
+.frame {
+    background-color: var(--FrameBackground);
+    border-radius: 10px;
+}
+
+.frame .header,
+.frame .row.page-row {
+    padding: 0px 74px;
+}
+
+.frame .header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.frame .header .header-content p {
+    color: #000;
+    margin: 0px;
+    font: normal 500 14px/24px 'Manrope', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 15px;
+    z-index: 999;
+    left: 0;
+    background: #f7f4f2;
+}
+
+/* header CSS end here */
+
+/* sidebar CSS start here */
+.frame .sidebar-column p {
+    color: var(--SecondaryColor);
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 0px;
+    margin-top: 12px;
+}
+
+.frame .sidebar-column .sidebar-list-items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 0px;
+    margin-top: 30px;
+}
+
+.frame .sidebar-column .sidebar-list-items .list-items-column h3 {
+    color: var(--SidebarTitle);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.frame .sidebar-column .sidebar-list-items .list-items-column li {
+    list-style: none;
+}
+
+.frame .sidebar-column .sidebar-list-items .list-items-column .list-item {
+    padding-left: 30px;
+}
+
+li.home {
+    margin-bottom: 20px;
+}
+
+.frame .sidebar-column .sidebar-list-items .list-items-column li a {
+    text-decoration: none;
+    color: var(--SidbarListItem);
+}
+
+.frame .sidebar-column .sidebar-list-items .list-items-column li a.active,
+.frame .sidebar-column .sidebar-list-items .list-items-column li a:hover {
+    color: #ff5800;
+}
+
+.frame .sidebar-column .button-column {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.frame .sidebar-column:after {
+    content: "";
+    position: absolute;
+    right: -13px;
+    height: 100%;
+    background: #d9d9d9;
+    width: 1px;
+    top: 0;
+}
+
+.frame .main {
+    padding-left: 100px;
+}
+
+a.active {
+    color: #FF5800 !important;
+}
+
+.button-common {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background: transparent;
+    border: 2px solid var(--PrimaryColor);
+    padding: 3px 18px;
+    color: var(--PrimaryColor);
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.button-common i {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.button-common:hover {
+    border: 2px solid var(--PrimaryColor);
+    transition: all 0.3s ease;
+    background: #FFEDE4 !important;
+    color: var(--PrimaryColor);
+}
+
+.button-common:active {
+    border: 2px solid var(--PrimaryColor) !important;
+    background: var(--PrimaryColor) !important;
+    color: #fff !important;
+}
+
+.sidebar-list-items .list-items-column {
+    padding: 0;
+    margin: 0;
+}
+
+.main-title {
+    color: var(--SecondaryColor);
+    position: relative;
+    margin-bottom: 32px;
+    font: normal 800 54px/64px 'Manrope', sans-serif;
+}
+
+.main-title .title-border::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid var(--PrimaryColor);
+    width: 371px;
+}
+
+.main-paragraph {
+    color: var(--SecondaryColor);
+    margin-bottom: 0px;
+    font: normal 400 16px/20px 'Manrope', sans-serif;
+}
+
+.location {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.location span {
+    color: var(--SecondaryColor);
+    font: normal 400 14px/24px 'Manrope', sans-seri;
+}
+
+.action-button-wrapper {
+    display: flex;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+#uxDesign,
+#development,
+.photography,
+#printGraphic,
+#sketchingPhotography,
+#designSample,
+#about {
+    padding-top: 120px;
+}
+
+.card-row {
+    margin-top: 60px;
+}
+
+#heroSection {
+    /* height: 100vh; */
+    margin-top: 100px;
+}
+
+section .section-title {
+    color: var(--SecondaryColor);
+    font: normal 800 28px/38px 'Manrope', sans-serif;
+    margin-bottom: 27px;
+}
+
+section .section-para {
+    color: var(--SecondaryColor);
+    font: normal 400 16px/26px 'Manrope', sans-serif;
+    margin: 0;
+}
+
+section .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+}
+
+section .card-title {
+    color: var(--SecondaryColor);
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+section .card-para {
+    color: var(--SecondaryColor);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+section .card-badge-wrapper {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+section .card-badge-wrapper .card-badge {
+    border: 1px solid var(--SecondaryColor);
+    color: var(--SecondaryColor);
+    padding: 8px;
+    border-radius: 100px;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #fff;
+}
+
+.section-column {
+    position: relative;
+}
+
+.section-column h3::before {
+    position: absolute;
+    left: -142px;
+    top: 0;
+    z-index: 1;
+    height: 60px;
+    width: 60px;
+    background-color: #fff;
+    border: 2px solid #FFA97C;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-column h3.product-design::before {
+    content: url("../assets/images/icons/ux_design.svg");
+}
+
+.section-column h3.website-design::before {
+    content: url("../assets/images/icons/website-design.svg");
+}
+
+.section-column h3.print-graphic::before {
+    content: url("../assets/images/icons/print-graphic.svg");
+}
+
+.section-column h3.sketch-photography::before {
+    content: url("../assets/images/icons/sketch-photography.svg");
+}
+
+.section-column h3.design-sample::before {
+    content: url("../assets/images/icons/sketch-photography.svg");
+}
+
+.section-column h3.about-rishabh::before {
+    content: url("../assets/images/icons/about_icon.svg");
+}
+
+.section-column h3.work-rishabh::before {
+    content: url("../assets/images/icons/work_rishabh.svg");
+}
+
+.section-column h3.superpowers::before {
+    content: url("../assets/images/icons/superpowers.svg");
+}
+
+.section-column h3.qualification::before {
+    content: url("../assets/images/icons/qualification.svg");
+}
+
+.sidebar-menu {
+    display: none !important;
+}
+
+.card-data {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.card-data h4 {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: var(--SecondaryColor);
+    font-weight: 800;
+}
+
+.card-data p {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--SecondaryColor);
+}
+
+.thing-column {
+    margin-top: 50px;
+}
+
+.blue-card {
+    background: #77A5FF;
+    padding: 36px 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    border-radius: 10px;
+}
+
+.thing-column h4 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--SecondaryColor);
+}
+
+.thing-column ul li {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--SecondaryColor);
+}
+
+.project-snippets {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 7px;
+    padding: 8px;
+}
+
+.project-snippets h4 {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.336px;
+    color: var(--SecondaryColor);
+    margin-bottom: 24px;
+}
+
+.project-snippets a {
+    font-size: 20px;
+    color: var(--SecondaryColor);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.superpower-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.superpower-column .content-wrapper h4 {
+    color: var(--SecondaryColor);
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0;
+    /* margin-bottom: 20px; */
+}
+
+.superpower-column .content-wrapper p {
+    color: var(--SecondaryColor);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.qualification p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 24px;
+}
+
+.development .visit-generating {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-top: 50px;
+}
+
+.development .visit-generating h2 {
+    margin: 0;
+    color: #363636;
+    font: normal 800 18px/24px 'Manrope', sans-serif;
+}
+
+.development .visit-generating p {
+    margin: 0;
+    color: #000;
+    font: normal 300 16px/22px 'Manrope', sans-serif;
+}
+
+.Working-Concept {
+    background: #FFDAB9;
+    padding: 40px 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.Working-Concept::after {
+    content: "";
+    background: url("../assets/images/image/angle.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    left: 0;
+    bottom: -36px;
+}
+
+.Working-Concept h2 {
+    margin: 0;
+    color: #363636;
+    font: normal 800 18px/24px 'Manrope', sans-serif;
+    z-index: 2;
+}
+
+.Working-Concept p {
+    margin: 0;
+    color: #000;
+    font: normal 400 16px/22px 'Manrope', sans-serif;
+    z-index: 2;
+}
+
+.Working-Concept span {
+    color: #000;
+    font: normal 300 16px/22px 'Manrope', sans-serif;
+    z-index: 2;
+}
+
+.Working-Concept ul,
+.Working-Concept ul li {
+    z-index: 2;
+    color: #000;
+    font: normal 300 16px/22px 'Manrope', sans-serif;
+}
+
+.low-fidelity-section .low-fidelity {
+    /* margin-top: 100px; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-bottom: 24px;
+}
+
+.checkout-flow {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-top: 24px;
+}
+
+.low-fidelity-section .low-fidelity h2 {
+    margin: 0;
+    font: normal 400 32px/38px 'Manrope', sans-serif;
+    color: #FF5800;
+}
+
+.low-fidelity-section .low-fidelity h3 {
+    margin: 0;
+    font: normal 800 28px/34px 'Manrope', sans-serif;
+    color: #363636;
+}
+
+.low-fidelity-section .low-fidelity span {
+    margin: 0;
+    font: normal 800 16px/22px 'Manrope', sans-serif;
+    color: #363636;
+}
+
+.low-fidelity-section .low-fidelity p {
+    margin: 0;
+    font: normal 400 16px/22px 'Manrope', sans-serif;
+    color: #000;
+}
+
+/* .wireframe-section {
+    margin-top: 30px;
+} */
+
+.wireframe-section .checkout-flow h2 {
+    margin: 0;
+    font: normal 800 18px/24px 'Manrope', sans-serif;
+    color: #363636;
+}
+
+.wireframe-section .checkout-flow p {
+    margin: 0;
+    font: normal 400 16px/22px 'Manrope', sans-serif;
+    color: #000;
+}
+
+/*  design-section css */
+/* .design-section {
+    margin-top: 150px;
+} */
+
+.design-section .design-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.design-section .design-content h2 {
+    margin: 0;
+    font: normal 400 32px/38px 'Manrope', sans-serif;
+    color: #FF5800;
+}
+
+.design-section .design-content h3 {
+    margin: 0;
+    font: normal 800 28px/36px 'Manrope', sans-serif;
+    color: #363636;
+}
+
+.design-section .design-content p {
+    margin: 0;
+    font: normal 400 16px/22px 'Manrope', sans-serif;
+    color: #000;
+}
+
+.design-section .design-content h4 {
+    margin: 0;
+    font: normal 400 24px/30px 'Manrope', sans-serif;
+    color: #363636;
+}
+
+.design-section .design-content h6 {
+    margin: 0;
+    font: normal 800 16px/22px 'Manrope', sans-serif;
+    color: #FF5800;
+}
+
+.design-section .design-content .typography-img {
+    max-width: 600px;
+    width: 100%;
+}
+
+.design-section .design-content .progress-bar {
+    max-width: 360px;
+    width: 100%;
+}
+
+/* NGG Difference slider */
+.differencecontainer{
+   overflow: Auto;
+   height: 650px; 
+}
+
+
+/* key section css */
+.key-section .key {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    /* margin-top: 120px; */
+}
+
+.key-section .key h2 {
+    color: #363636;
+    margin: 0;
+    font: normal 400 32px/38px 'Manrope', sans-serif;
+}
+
+.key-section .key h3 {
+    color: #363636;
+    margin: 0;
+    font: normal 800 28px/34px 'Manrope', sans-serif;
+}
+
+.key-section .key P {
+    color: #000;
+    margin: 0;
+    font: normal 400 16px/22px 'Manrope', sans-serif;
+}
+
+.checkbox-label {
+    font: normal 800 16px/22px 'Manrope', sans-serif !important;
+}
+
+.figma-layout {
+    background: #404040;
+    margin-top: 30px;
+}
+
+/* prototype section css */
+/* .prototype-section {
+    margin-top: 120px;
+} */
+
+.prototype-section .prototype-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.prototype-section .prototype-content h2 {
+    margin: 0;
+    font: normal 400 32px/38px 'Manrope', sans-serif;
+    color: #FF5800;
+}
+
+.prototype-section .prototype-content h3 {
+    margin: 0;
+    font: normal 800 28px/36px 'Manrope', sans-serif;
+    color: #363636;
+}
+
+.prototype-section .prototype-content p {
+    margin: 0;
+    font: normal 400 16px/22px 'Manrope', sans-serif;
+    color: #000;
+}
+
+.prototype-section .prototype-content span {
+    font: normal 400 14px/20px 'Manrope', sans-serif;
+    color: #000;
+}
+
+.prototype-section .prototype-content a {
+    width: 250px;
+}
+
+/* vizitrac section css */
+/* .vizitrac-section {
+    margin-top: 120px;
+} */
+
+.vizitrac-section .vizitrac-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.vizitrac-section .vizitrac-content h2 {
+    margin: 0;
+    font: normal 400 32px/38px 'Manrope', sans-serif;
+    color: #FF5800;
+}
+
+.vizitrac-section .vizitrac-content h3 {
+    margin: 0;
+    font: normal 800 28px/36px 'Manrope', sans-serif;
+    color: #363636;
+}
+
+.vizitrac-section .vizitrac-content h4 {
+    margin-bottom: 0;
+}
+
+.vizitrac-section .vizitrac-content p {
+    margin: 0;
+    font: normal 400 16px/22px 'Manrope', sans-serif;
+    color: #000;
+}
+
+.vizitrac-section .vizitrac-content a {
+    width: 240px;
+}
+
+.vizitrac-section .vizitrac-content h5 {
+    margin: 0;
+    font: normal 400 28px/36px 'Manrope', sans-serif;
+    color: #363636;
+    margin-top: 100px;
+}
+
+.vizitrac-section .vizitrac-content h6 {
+    margin: 0;
+    font: normal 800 16px / 22px 'Manrope', sans-serif;
+    color: #FF5800;
+}
+
+.vizitrac-section .vizitrac-content span {
+    margin: 0;
+    font: normal 400 16px/22px 'Manrope', sans-serif;
+    color: #000;
+}
+
+/* finalscreen-section css */
+/* .finalscreen-section {
+    margin-top: 130px;
+} */
+
+.finalscreen-section .full-screen {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.finalscreen-section .full-screen h2 {
+    margin: 0;
+    font: normal 400 32px/38px 'Manrope', sans-serif;
+    color: #FF5800;
+}
+
+.finalscreen-section .full-screen h3 {
+    margin: 0;
+    font: normal 800 28px/36px 'Manrope', sans-serif;
+    color: #363636;
+}
+
+.full-screen-layout {
+    background: #404040;
+    padding: 40px;
+}
+
+/* wrapping-section css */
+/* .wrapping-section {
+    margin-top: 100px;
+} */
+
+.wrapping-section .wrapping {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.wrapping-section .wrapping h2 {
+    margin: 0;
+    font: normal 800 28px/36px 'Manrope', sans-serif;
+    color: #FF5800;
+}
+
+.wrapping-section .wrapping .wrapping-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.wrapping-section .wrapping h3 {
+    margin: 0;
+    font: normal 800 24px/30px 'Manrope', sans-serif;
+    color: #363636;
+}
+
+.wrapping-section .wrapping p {
+    margin: 0;
+    font: normal 400 16px/22px 'Manrope', sans-serif;
+    color: #000;
+}
+
+.wrapping-section .wrapping ul {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.wrapping-section .wrapping ul li {
+    font: normal 400 16px/22px 'Manrope', sans-serif;
+    color: #000;
+}
+
+/* wrapping-section css */
+.wrapping-section .other-work p {
+    margin: 0;
+    font: normal 400 16px/22px 'Manrope', sans-serif;
+    color: #000;
+}
+
+/* design-sample-slider css */
+.design-sample-slider {
+    margin-top: 56px;
+    position: relative;
+}
+
+/* .design-sample-slider .item.design-item .design-sample-card{
+    min-height: 520px;
+    border: 2px solid rebeccapurple;
+} */
+
+.design-sample-slider .design-item .design-sample-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.design-sample-slider .design-item .design-sample-card img.sample-img {
+    width: 100%;
+}
+
+.design-sample-slider .design-item .design-sample-card .card-inner-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding: 0 8px;
+}
+
+.design-sample-slider .design-item .design-sample-card .card-inner-content h3 {
+    font: normal 800 18px/24px 'Manrope', sans-serif;
+    margin: 0;
+    color: #363636;
+}
+
+.design-sample-slider .design-item .design-sample-card .card-inner-content p {
+    font: normal 400 16px/22px 'Manrope', sans-serif;
+    margin: 0;
+    color: #363636;
+}
+
+.design-sample-slider .design-item .design-sample-card .card-inner-content ul.work-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.design-sample-slider .design-item .design-sample-card .card-inner-content ul.work-list li {
+    list-style: none;
+    background: #fff;
+    padding: 8px;
+    border-radius: 100px;
+    font: normal 400 12px/18px 'Manrope', sans-serif;
+}
+
+.design-sample-slider .design-item .design-sample-card .card-inner-content a.view-button {
+    border: 2px solid #FF5800;
+    padding: 8px 24px;
+    color: #FF5800;
+    border-radius: 5px;
+    font: normal 800 14px/20px 'Manrope', sans-serif;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 8px;
+    max-width: 195px;
+    width: 100%;
+}
+
+.design-sample-slider .design-item .design-sample-card .card-inner-content a i img {
+    width: 15px;
+}
+
+.design-sample-slider .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.design-sample-slider .owl-nav button span {
+    color: #FF5800;
+    font-size: 34px;
+}
+
+.design-sample-slider .owl-nav .owl-prev {
+    left: -10px;
+}
+
+.design-sample-slider .owl-nav .owl-next {
+    right: -10px;
+}
+
+/* .design-sample-slider .owl-dot{
+    background: #fff !important;
+}
+
+.design-sample-slider .owl-dot.active{
+    background: #FF5800 !important;
+} */
+
+
+/* Footer css */
+.footer {
+    background: linear-gradient(270deg, #FFE8D4 11.26%, rgba(253, 217, 185, 0.00) 92.35%);
+    margin-top: 120px;
+    padding: 40px 74px;
+}
+
+.footer h3 {
+    color: var(--SecondaryColor);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer p {
+    color: var(--SecondaryColor);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.footer span {
+    color: var(--PrimaryColor);
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 21px;
+}
+
+.footer .slider-top {
+    color: var(--PrimaryColor);
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer .slider-top a {
+    background-color: var(--PrimaryColor);
+    color: #fff !important;
+    border-radius: 100%;
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-button {
+    border: 2px solid var(--PrimaryColor);
+    border-radius: 4px;
+    color: var(--PrimaryColor);
+    display: none;
+}
+
+.menu-button i {
+    font-weight: 900;
+    font-size: 24px;
+    padding: 4px;
+}
+
+.contact-details {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-details .contact-number,
+.contact-details .email-address,
+.contact-details .linkedin {
+    gap: 8px;
+    color: var(--SecondaryColor);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px !important;
+    text-decoration: none;
+}
+
+.backto-top {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tracking h4 {
+    color: var(--SecondaryColor);
+    font: normal 400 32px/38px 'Manrope', sans-serif;
+    margin-bottom: 12px;
+    margin-top: 40px;
+}
+
+.tracking h3 {
+    color: var(--SecondaryColor);
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.tracking p {
+    color: var(--SecondaryColor);
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.tracking p::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    border-bottom: 4px solid var(--PrimaryColor);
+    width: 414px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.sidebar .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sidebar .sidebar-content h3 {
+    color: var(--SecondaryColor);
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.sidebar .sidebar-content p {
+    margin-bottom: 0;
+    color: var(--SecondaryColor);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.text-content h4 {
+    color: var(--PrimaryColor);
+    margin-bottom: 0;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.text-content h3 {
+    color: var(--SecondaryColor);
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+/* .content-bg {
+    background: linear-gradient(270deg, #FFE8D4 11.26%, rgba(253, 217, 185, 0.00) 92.35%);
+} */
+
+.heading {
+    margin-top: 70px;
+}
+
+.hypothetical-title {
+    margin-top: 40px;
+}
+
+.detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.detail-wrapper h4 {
+    font: normal 400 24px/36px 'Manrope', sans-serif;
+    color: #FF5800;
+}
+
+.detail-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.detail-wrapper ul li {
+    font: normal 400 16px/24px 'Manrope', sans-serif;
+}
+
+.text-content .dark-heading {
+    color: #000;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.text-content .primary-sub-heading {
+    color: var(--PrimaryColor);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.engagement {
+    display: flex;
+}
+
+.engagement .engagement-content ul {
+    margin-top: 24px;
+}
+
+.engagement .engagement-content .list-wrapper {
+    display: flex;
+    gap: 5px;
+}
+
+.engagement .engagement-content ul.phase-lists h3 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.engagement .engagement-content ul li {
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.massive-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.massive-wrapper .img-caption {
+    font: normal 300 16px/22px 'Manrope', sans-serif;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.content-wrapper .content {
+    display: flex;
+    gap: 8px;
+}
+
+.content-wrapper .content p {
+    font: normal 800 16px/24px 'Manrope', sans-serif;
+    margin: 0;
+}
+
+.engagement .engagement-content h3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.engagement .engagement-content .reseach {
+    background: #D9D9D9;
+    height: 39px;
+    min-width: 220px;
+    width: 100%;
+}
+
+.engagement .engagement-content .design {
+    background: #fff;
+    height: 39px;
+    min-width: 290px;
+    width: 100%;
+}
+
+.engagement .engagement-content .handover {
+    background: #D9D9D9;
+    height: 39px;
+    min-width: 150px;
+    width: 100%;
+}
+
+.text-content p {
+    margin-bottom: 0;
+    color: #000;
+}
+
+/* .sidebar-column.hidden {
+    transform: translateX(-310px);
+} */
+
+.qualification-content {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    margin-top: 40px;
+}
+
+.qualification-content img {
+    width: 80px;
+}
+
+.qualification-content .inner-content h3 {
+    margin: 0;
+    font: normal 800 18px/24px 'Manrope', sans-serif;
+    color: #000;
+}
+
+.qualification-content .inner-content P {
+    margin: 0;
+    font: normal 400 16px/22px 'Manrope', sans-serif;
+    color: #000;
+}
+
+.sky-blue-card {
+    background-color: #4CC8FF;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.sidebar-column {
+    position: sticky;
+    top: 80px;
+}
+
+.padding-y {
+    padding: 96px 0;
+}
+
+.light-orange-bg {
+    background: linear-gradient(270deg, #FFE8D4 11.26%, rgba(253, 217, 185, 0) 92.35%);
+    padding: 56px 0;
+    margin-top: 100px;
+}
+
+.images-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.images-wrapper span {
+    font: normal 400 16px / 22px 'Manrope', sans-serif;
+    color: #000;
+    padding: 0 10px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin: 56px 0;
+}
+
+.show-interaction {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkbox-input {
+    width: 72px !important;
+    height: 30px !important;
+    background-image: url("../assets/images/image/circle-Img.svg") !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border: 1px solid #AFAFAF;
+    background-color: #d9d9d9 !important;
+}
+
+.checkbox-input:focus {
+    border: 1px solid #AFAFAF;
+}
+
+.checkbox-input:checked {
+    background-color: #FF5800 !important;
+    border: 1px solid #fff;
+}
+
+.checkbox-label {
+    margin: 7px 0 0 24px;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.service-content h5 {
+    font: normal 700 20px/26px 'Manrope', sans-serif;
+    color: #000;
+    margin: 0;
+}
+
+.service-content p {
+    color: #000;
+    font: normal 400 16px/22px 'Manrope', sans-serif;
+    margin: 0;
+}
+
+.column-hide {
+    display: block;
+}
+
+.margin-top {
+    margin-top: 100px;
+}
+
+.h-auto {
+    height: auto;
+}
+
+.position-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.position-card i {
+    text-align: center;
+}
+
+.lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.container {
+    margin: 150px auto;
+    max-width: 960px;
+}
+
+.beforeAfter {
+    height: Auto;
+}
+
+.lightcase-contentInner svg{
+    width: 100% !important;
+}
+
+
+
+/* ##########>>>>>----- Media Query -----<<<<<########## */
+
+/* Mobile screen  */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 8px;
+    }
+
+    .sidebar-menu {
+        display: block !important;
+    }
+
+    .scrollDataframe {
+        border: 10px solid #fff;
+    }
+
+    .frame .header .header-content {
+        padding: 14px 16px;
+    }
+
+    header {
+        top: 8px;
+        box-shadow: 0px 2px 10px 0px #d9d9d9;
+    }
+
+    .footer {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slider-top a {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .frame .header,
+    .frame .row.page-row {
+        padding: 0px 20px;
+    }
+
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .sidebar-column {
+        border-right: none !important;
+        display: none;
+    }
+
+    .frame .main {
+        padding-left: 0;
+    }
+
+    .main-title {
+        margin-top: 30px;
+        font: normal 800 44px/50px 'Manrope', sans-serif;
+        margin-bottom: 36px;
+    }
+
+    .main-title .title-border::before {
+        width: 233px;
+    }
+
+    .main-paragraph {
+        font-size: 24px;
+        margin-bottom: 20px;
+        line-height: 28px;
+    }
+
+    #uxDesign,
+    .development,
+    .photography,
+    #development,
+    #printGraphic,
+    #sketchingPhotography,
+    #designSample,
+    #about {
+        padding-top: 24px;
+    }
+
+    #heroSection {
+        height: auto;
+        margin-top: 0;
+    }
+
+    section .section-title {
+        font: normal 800 24px/30px 'Manrope', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    section .section-para {
+        font-size: 16px;
+    }
+
+    #dateTime {
+        display: none;
+    }
+
+    .card-row {
+        margin-top: 20px;
+    }
+
+    section .card-title {
+        font-size: 20px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    section .card-para {
+        font-size: 14px;
+    }
+
+    .action-button-wrapper {
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .button-common {
+        padding: 3px 18px;
+        border: 1px solid var(--PrimaryColor);
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .frame .sidebar-column {
+        position: sticky;
+        top: 76px;
+    }
+
+    .sidebar-column {
+        position: fixed !important;
+        background: #fff;
+        top: 0;
+        left: -300px;
+        z-index: 1;
+        padding: 20px;
+        /* max-height: 600px; */
+        width: 300px;
+        overflow: hidden auto;
+        height: calc(100vh - 86px);
+        transition: left 0.8s ease;
+        z-index: 999;
+    }
+
+    .sidebar-column.hidden {
+        left: 0;
+        /* transition: right linear .2s; */
+        /* transform: translateX(0); */
+    }
+
+    .bodyLayer {
+        height: 500px;
+        background: #000;
+    }
+
+    .location {
+        margin-top: 42px;
+    }
+
+    .thing-column {
+        margin-top: 20px;
+    }
+
+    .project-snippets {
+        align-items: flex-start;
+        height: 350px;
+    }
+
+    .project-snippets h4 {
+        margin-bottom: 0;
+        font: normal 800 20px/26px 'Manrope', sans-serif;
+    }
+
+    .thing-column h4 {
+        font: normal 800 20px/26px 'Manrope', sans-serif;
+    }
+
+    .superpower-column .content-wrapper h4,
+    .superpower-column .content-wrapper p,
+    .detail-wrapper h4 {
+        margin-bottom: 0;
+    }
+
+    .detail-wrapper ul {
+        row-gap: 8px;
+    }
+
+    .content-wrapper,
+    .detail-wrapper {
+        row-gap: 12px;
+    }
+
+    .blue-card {
+        flex-wrap: wrap;
+        padding: 15px 15px;
+    }
+
+    .blue-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .design-section .design-content {
+        row-gap: 16px;
+    }
+
+    .wrapping-section .wrapping ul {
+        margin-bottom: 0;
+        padding: 10px 24px;
+    }
+
+    .footer,
+    .design-section,
+    .design-sample-slider,
+    .wrapping-section,
+    .key-section .key,
+    .finalscreen-section,
+    .prototype-section,
+    .vizitrac-section {
+        margin-top: 24px;
+    }
+
+    .wrapping-section .wrapping {
+        row-gap: 16px;
+    }
+
+    .footer .backto-top {
+        justify-content: flex-start !important;
+    }
+
+    .footer .contact-details {
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .design-section .design-content h2,
+    .finalscreen-section .full-screen h2,
+    .key-section .key h2 {
+        font: normal 400 24px/30px 'Manrope', sans-serif;
+    }
+
+    .footer p {
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+
+    .tracking h4 {
+        font-size: 24px;
+    }
+
+    .tracking h3 {
+        font-size: 20px;
+    }
+
+    .tracking p {
+        font-size: 18px;
+    }
+
+    .tracking p::before {
+        width: 300px;
+    }
+
+    .sidebar {
+        gap: 20px;
+    }
+
+    .text-content h4,
+    .low-fidelity-section .low-fidelity h2,
+    .prototype-section .prototype-content h2,
+    .vizitrac-section .vizitrac-content h2,
+    .vizitrac-section .vizitrac-content h5,
+    .wrapping-section .wrapping h2 {
+        font-size: 24px;
+    }
+
+    .development .visit-generating {
+        margin-top: 0;
+    }
+
+    .development .visit-generating h2 {
+        font-size: 16px;
+    }
+
+    .Working-Concept {
+        margin-top: 16px;
+        padding: 20px 25px;
+    }
+
+    .low-fidelity-section .low-fidelity {
+        margin-top: 30px;
+    }
+
+    .text-content h3 {
+        font: normal 800 18px/24px 'Manrope', sans-serif;
+    }
+
+    .text-content .dark-heading,
+    .low-fidelity-section .low-fidelity h3,
+    .design-section .design-content h3,
+    .key-section .key h3,
+    .prototype-section .prototype-content h3,
+    .vizitrac-section .vizitrac-content h3,
+    .finalscreen-section .full-screen h3,
+    .wrapping-section .wrapping h3 {
+        font: normal 800 18px/24px 'Manrope', sans-serif;
+    }
+
+    .wireframe-section .checkout-flow h2 {
+        font: normal 800 16px/22px 'Manrope', sans-serif;
+    }
+
+    .wireframe-section .checkout-flow p {
+        font: normal 400 14px/20px 'Manrope', sans-serif;
+    }
+
+    .low-fidelity-section .low-fidelity,
+    .prototype-section .prototype-content,
+    .vizitrac-section .vizitrac-content,
+    .finalscreen-section .full-screen {
+        row-gap: 16px;
+    }
+
+    .text-content {
+        gap: 16px;
+    }
+
+    .engagement {
+        flex-wrap: wrap;
+    }
+
+    .heading,
+    .hypothetical-title {
+        margin-top: 0;
+    }
+
+    .text-content p {
+        margin: 0;
+    }
+
+    .engagement .engagement-content h3 {
+        font: normal 800 16px/22px 'Manrope', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
+
+    .d-flex.gap-5 {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .d-flex.gap-3 .d-flex.flex-column.align-items-center img {
+        width: 40px;
+    }
+
+    .d-flex.gap-5 .d-flex.flex-column.align-items-center img {
+        width: 40px;
+    }
+
+    .vizitrac-section .vizitrac-content h5 {
+        margin-top: 44px;
+    }
+
+    .main-content-wrapper {
+        overflow-x: hidden !important;
+    }
+
+    .column-hide {
+        display: none;
+    }
+}
+
+/* Teblet screen */
+@media (min-width: 601px) and (max-width: 768px) {
+    body {
+        padding: 8px;
+    }
+
+    .column-hide {
+        display: none;
+    }
+
+    .frame .header,
+    .frame .row.page-row {
+        padding: 0px 16px;
+    }
+
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .sidebar-column {
+        border-right: none !important;
+        display: none;
+    }
+
+    .frame .main {
+        padding-left: 0;
+    }
+
+    .main-title {
+        margin-top: 30px;
+        font: normal 800 34px/44px 'Manrope', sans-serif;
+    }
+
+    .main-title .title-border::before {
+        width: 233px;
+    }
+
+    .main-paragraph {
+        font: normal 400 16px/20px 'Manrope', sans-serif;
+    }
+
+    #uxDesign,
+    .development,
+    .photography,
+    #development,
+    #printGraphic,
+    #sketchingPhotography,
+    #designSample,
+    #about {
+        padding-top: 60px;
+    }
+
+    section .section-title {
+        font-size: 28px;
+    }
+
+    section .section-para {
+        font-size: 16px;
+    }
+
+    .card-row {
+        margin-top: 20px;
+    }
+
+    section .card-title {
+        font-size: 20px;
+        margin-top: 24px;
+    }
+
+    section .card-para {
+        font-size: 14px;
+    }
+
+    .action-button-wrapper {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .button-common {
+        padding: 3px 18px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    /* .sidebar-column {
+        position: absolute;
+        top: 0;
+        right: -300px;
+        width: 250px;
+        background-color: #fff;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-250px);
+    } */
+
+    .sidebar-column {
+        position: fixed;
+        background: #fff;
+        top: 20px;
+        right: 0;
+        z-index: 999;
+        padding: 20px;
+        max-height: 600px;
+        width: 300px;
+        overflow-y: auto;
+        box-shadow: 5px 8px 10px rgb(95 94 94 / 30%);
+        transform: translateX(0);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .footer .backto-top {
+        justify-content: flex-start !important;
+    }
+
+    .footer .contact-details {
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .footer p {
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+
+    .tracking h4 {
+        font-size: 24px;
+    }
+
+    .tracking h3 {
+        font-size: 20px;
+    }
+
+    .tracking p {
+        font-size: 18px;
+    }
+
+    .tracking p::before {
+        width: 300px;
+    }
+
+    .sidebar {
+        gap: 20px;
+    }
+
+    .text-content h4 {
+        font-size: 22px;
+    }
+
+    .text-content h3 {
+        font-size: 24px;
+    }
+}
+
+/* Laptop screen  */
+@media (min-width: 769px) and (max-width: 992px) {
+    body {
+        padding: 16px;
+    }
+
+    .column-hide {
+        display: none;
+    }
+
+    .frame .header,
+    .frame .row.page-row {
+        padding: 0px 30px;
+    }
+
+    .footer {
+        padding: 40px 30px;
+    }
+
+    .sidebar-column {
+        border-right: none !important;
+        display: none;
+    }
+
+    .frame .main {
+        padding-left: 0;
+    }
+
+    .main-title {
+        margin-top: 30px;
+        font: normal 800 50px/60px 'Manrope', sans-serif;
+    }
+
+    .main-title .title-border::before {
+        width: 344px;
+    }
+
+    .main-paragraph {
+        font: normal 400 16px/20px 'Manrope', sans-serif;
+    }
+
+    #uxDesign,
+    .development,
+    .photography,
+    #development,
+    #printGraphic,
+    #sketchingPhotography,
+    #designSample,
+    #about {
+        padding-top: 60px;
+    }
+
+    section .section-title {
+        font-size: 28px;
+    }
+
+    section .section-para {
+        font-size: 16px;
+    }
+
+    .card-row {
+        margin-top: 20px;
+    }
+
+    section .card-title {
+        font-size: 20px;
+        margin-top: 24px;
+    }
+
+    section .card-para {
+        font-size: 14px;
+    }
+
+    .action-button-wrapper {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .button-common {
+        padding: 3px 18px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    /* .sidebar-column {
+        position: absolute;
+        top: 0;
+        right: -300px;
+        width: 250px;
+        background-color: #fff;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-250px);
+    } */
+
+    .sidebar-column {
+        position: absolute;
+        background: #fff;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        padding: 20px;
+        max-height: 600px;
+        width: 300px;
+        overflow-y: auto;
+        /* transition: 0.3s ease-in-out; */
+        /* transform: translateX(-250px); */
+    }
+
+    .tracking h4 {
+        font-size: 24px;
+    }
+
+    .tracking h3 {
+        font-size: 20px;
+    }
+
+    .tracking p {
+        font-size: 18px;
+    }
+
+    .tracking p::before {
+        width: 300px;
+    }
+
+    .sidebar {
+        gap: 20px;
+    }
+
+    .text-content h4 {
+        font-size: 22px;
+    }
+
+    .text-content h3 {
+        font-size: 24px;
+    }
+}
+
+/* Desktop screen  */
+@media (min-width: 993px) and (max-width: 1200px) {
+    body {
+        padding: 16px;
+    }
+
+    .frame .header,
+    .frame .row.page-row {
+        padding: 0px 42px;
+    }
+
+    .footer {
+        padding: 40px 42px;
+    }
+
+
+    .frame .main {
+        padding-left: 0;
+    }
+
+    .main-title {
+        font: normal 800 50px/60px 'Manrope', sans-serif;
+        margin-top: 30px;
+    }
+
+    .main-title .title-border::before {
+        width: 344px;
+    }
+
+    .main-paragraph {
+        font: normal 400 16px/20px 'Manrope', sans-serif;
+    }
+
+    #uxDesign,
+    .development,
+    .photography,
+    #development,
+    #printGraphic,
+    #sketchingPhotography,
+    #designSample,
+    #about {
+        padding-top: 60px;
+    }
+
+    section .section-title {
+        font-size: 28px;
+    }
+
+    section .section-para {
+        font-size: 16px;
+    }
+
+    .card-row {
+        margin-top: 20px;
+    }
+
+    section .card-title {
+        font-size: 20px;
+        margin-top: 24px;
+    }
+
+    section .card-para {
+        font-size: 14px;
+    }
+
+    .action-button-wrapper {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .button-common {
+        padding: 3px 18px;
+    }
+
+    .frame .main {
+        padding-left: 80px;
+    }
+
+    .sidebar-column {
+        display: block;
+        /* border-right: 1px solid #D9D9D9; */
+        height: 100%;
+    }
+
+    .tracking h4 {
+        font-size: 28px;
+    }
+
+    .tracking h3 {
+        font-size: 24px;
+    }
+
+    .tracking p {
+        font-size: 22px;
+    }
+
+    .tracking p::before {
+        width: 370px;
+    }
+
+    .sidebar {
+        gap: 30px;
+    }
+
+    .text-content h4 {
+        font-size: 24px;
+    }
+
+    .text-content h3 {
+        font-size: 26px;
+    }
+}

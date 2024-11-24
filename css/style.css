@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .frame .main .main-page {
+    padding: 50px;
+} */
+
+.frame .main .main-page h1 {
+    font-size: 64px;
+    font-weight: 800;
+    color: var(--SecondaryColor);
+    position: relative;
+}
+
+/* .frame .main {
+    overflow: auto;
+} */
+
